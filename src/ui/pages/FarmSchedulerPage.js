@@ -58,9 +58,7 @@ function FarmSchedulerPage() {
         </Stack>
       </Stack>
       <nav
-        className={`flex-col h-screen bg-neutral-200 w-1/4 px-7 ${
-          window.innerWidth >= 1024 ? "fixed top-0 right-0 z-10" : "hidden"
-        }`}
+        className="flex-col h-screen bg-neutral-200 w-1/4 px-7 "
       >
         <div className="date">
           <p className="font-normal text-center">{currentDate}</p>
