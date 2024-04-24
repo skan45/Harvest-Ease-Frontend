@@ -1,4 +1,5 @@
 import React from "react";
+
 import { NavLink } from "react-router-dom";
 import { SideBarData } from "./SideBarData";
 import { useState } from "react";
@@ -13,7 +14,7 @@ function Sidebar() {
   };
 
   return (
-    <nav
+    <nav 
       className={`  flex-col h-screen ${
         isSidebarOpen ? "bg-darkGrey w-1/4 px-7" : "w-10 px-1 bg-darkBlue"
       }  relative`}

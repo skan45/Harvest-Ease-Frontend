@@ -1,0 +1,41 @@
+
+body{
+    background-color: #D8E4D9;
+}
+
+.plant-health{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:
+    "sidebar plantimg plantdisease"
+    "sidebar planttype plantpest";
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 5px;
+    
+}
+.sidebar_health{
+ grid-area: sidebar;
+ border: solid 1px black;
+}
+.planttype{
+    grid-area: planttype;
+    border: solid 1px black;
+ 
+}
+.plantpest{
+    grid-area: plantpest;
+    border: solid 1px black;
+    width: 100%;
+}
+.plantimg{
+    grid-area: plantimg;
+    border: solid 1px black;
+    width: 100%;
+}
+.plantdisease{
+    grid-area: plantdisease;
+    border: solid 1px black;  
+    width: 100%;  
+}

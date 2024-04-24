@@ -23,7 +23,7 @@ export const SideBarData=[
     },
     {
         title:"Plant Health Scanner",
-        link:"Plant-health-scanner",
+        link:"/Plant-Health-Scanner",
         icon:<CameraIcon className="size-4 "/>
     },
     {

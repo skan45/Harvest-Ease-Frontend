@@ -59,7 +59,7 @@ const Analysis = () => {
     <div className='courbe'>
       <h1> Predictive Analysis</h1>
      
-      <Line data={data} options={options}  height={400} className='chart' ></Line>
+      <Line data={data} options={options}   className='chart' ></Line>
      
      
     </div>

@@ -3,7 +3,7 @@ import './weather.css'
 
 const Weather = () => {
   return (
-    <div className='weather-container'>
+    <div className='weather_container'>
       <h1>Weather</h1>
     </div>
   )

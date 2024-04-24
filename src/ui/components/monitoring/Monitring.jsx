@@ -11,7 +11,7 @@ const Monitring = () => {
       <h1>Monitoring</h1>
       <ul>
         <li>
-          <img src={potatoimg} alt="potatos" />
+          <img className='monitoring_img' src={potatoimg} alt="potatos" />
           <div>
             <p className='Name'>Potatos</p>
             <p>60Q/Ha</p>
@@ -19,15 +19,15 @@ const Monitring = () => {
           </div>
         </li>
         <li>
-          <img src={gingerimg} alt="Ginger" />
-          <div>
-          <p className='Name'>Ginger</p>
+          <img src={gingerimg} className='monitoring_img' alt="Ginger" />
+          <div >
+            <p className='Name'>Ginger</p>
             <p>60Q/Ha</p>
             <p>3Ha</p>
           </div>
         </li>
         <li>
-          <img src={tomatoimg} alt="Tomatos" />
+          <img className='monitoring_img' src={tomatoimg} alt="Tomatos" />
           <div>
           <p className='Name'>Tomatos</p>
             <p>60Q/Ha</p>
@@ -35,7 +35,7 @@ const Monitring = () => {
           </div>
         </li>
         <li>
-          <img src={onionimg} alt="Onion" />
+          <img  className='monitoring_img' src={onionimg} alt="Onion" />
           <div>
           <p className='Name'>Onion</p>
             <p>60Q/Ha</p>
