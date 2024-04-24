@@ -1,15 +1,21 @@
-import { ChatBubbleBottomCenterIcon, Cog6ToothIcon } from '@heroicons/react/24/outline'
+import { ChatBubbleBottomCenterIcon, Cog6ToothIcon, StarIcon } from '@heroicons/react/24/outline'
 import { HomeIcon } from '@heroicons/react/24/outline'
 import { CameraIcon } from '@heroicons/react/24/outline'
 import { PencilIcon } from '@heroicons/react/24/outline'
 import { CalendarIcon } from '@heroicons/react/24/outline'
+import { Square2StackIcon } from '@heroicons/react/24/solid'
 
 
 export const SideBarData=[
     {
+        title:"Home",
+        link:"/",
+        icon:<HomeIcon className='size-4'/>
+    },
+    { 
         title:"Forum",
         link:"/Forum",
-        icon:<HomeIcon className="size-4 " />
+        icon:<Square2StackIcon className="size-4 " />
     },
     {
         title:"Chatbot",
