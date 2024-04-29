@@ -1,8 +1,11 @@
 import React from 'react'
+import SavedMessagesLayout from '../components/SavedMessagesLayout'
 
 function SavedMessagesPage() {
   return (
-    <div></div>
+    <>
+      <SavedMessagesLayout/>
+    </>
   )
 }
 
