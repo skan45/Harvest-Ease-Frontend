@@ -129,9 +129,11 @@ function FarmSchedulerPage() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 //modal 2
-  const [selectedEvent, setSelectedEvent] = React.useState(false);
-  const handleOpenCard = (event) => setSelectedEvent(true);
-  const handleCloseCard = () => setSelectedEvent(false);
+const [selectedEventId, setSelectedEventId] = React.useState(null);
+
+const handleOpenCard = (eventId) => setSelectedEventId(eventId);
+const handleCloseCard = () => setSelectedEventId(null);
+
 //date 
   const [currentDate, setCurrentDate] = useState(getDate());
 
@@ -334,20 +336,18 @@ function FarmSchedulerPage() {
         <p className="font-bold text-center">today's schedule</p>
 
         {EVENTS.map((event) => {
-          const eventDate = new Date(event.start);
-          if (eventDate.toDateString() === today.toDateString()) {
-            return (
-              <Card
-                className="rounded-t-lg "
-                sx={{
-                  maxWidth: 400,
-                  margin: "10px",
-                  backgroundColor: "white",
-                  overflow: "auto",
-                  maxHeight: "300px",
-                }}
-              >
-                <CardActionArea
+  const eventDate = new Date(event.start);
+  if (eventDate.toDateString() === today.toDateString()) {
+    return (
+      <Card key={event.event_id} className="rounded-t-lg "
+      sx={{
+        maxWidth: 400,
+        margin: "10px",
+        backgroundColor: "white",
+        overflow: "auto",
+        maxHeight: "300px",
+      }} >
+          <CardActionArea
                   sx={{ backgroundColor: event.color }}
                   /* onClick={() => handleCardExpand(event)}*/
                 >
@@ -361,31 +361,29 @@ function FarmSchedulerPage() {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <Button
-                    size="small"
-                    sx={{ color: "black", fontWeight: "bold" }}
-                    onClick={handleOpenCard}
-                  >
-                    {event.title}
-                  </Button>
-
-                  <IconButton
+       <CardActions>
+          <Button
+            size="small"
+            sx={{ color: "black", fontWeight: "bold" }}
+            onClick={() => handleOpenCard(event.event_id)}
+          >
+            {event.title}
+          </Button>
+          <IconButton
                     size="small"
                     aria-label="go to event"
-                    onClick={handleOpenCard}
-
+                    onClick={() => handleOpenCard(event.event_id)}
                     /* onClick={() => handleCardExpand(event)}*/
                   >
                     <ArrowForwardIcon />
                   </IconButton>
-                </CardActions>
-                <Modal
-                  open={selectedEvent}
-                  onClick={handleCloseCard}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
+        </CardActions>
+        <Modal
+          open={selectedEventId === event.event_id}
+          onClose={handleCloseCard}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
                   <Box
                     sx={{
                       position: "absolute",
