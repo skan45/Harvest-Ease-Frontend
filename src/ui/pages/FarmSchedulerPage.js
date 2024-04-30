@@ -339,7 +339,7 @@ const handleCloseCard = () => setSelectedEventId(null);
   const eventDate = new Date(event.start);
   if (eventDate.toDateString() === today.toDateString()) {
     return (
-      <Card key={event.event_id} className="rounded-t-lg "
+      <Card key={event.event_id} className="rounded-3xl "
       sx={{
         maxWidth: 400,
         margin: "10px",
@@ -406,9 +406,10 @@ const handleCloseCard = () => setSelectedEventId(null);
                       <CloseIcon />
                     </IconButton>
                     <Card
-                      className="rounded-t-lg "
+                      className="rounded-3xl "
                       sx={{
                         maxWidth: 600,
+                        height:300,
                         margin: "10px",
                         backgroundColor: event.color,
                         overflow: "auto",
