@@ -1,9 +1,13 @@
-import React from 'react'
-
-function ChatbotPage() {
+import React from "react";
+import MessagesLayout from "../components/chatbot/MessagesLayout";
+import ChatbotInput from "../components/chatbot/ChatbotInput";
+function ChatPage() {
   return (
-    <div></div>
+    < >
+      <MessagesLayout/>
+      <ChatbotInput className="fixed bottom-3 " />
+    </>
   )
 }
 
-export default ChatbotPage
+export default ChatPage;

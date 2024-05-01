@@ -1,29 +1,42 @@
-import logo from "./logo.svg";
 
-import CommunnityPage from "./ui/pages/CommunnityPage";
+
+
 import ChatbotPage from "./ui/pages/ChatbotPage";
 import Home from "./ui/pages/Home";
 import  ResourcesTrackerPage from "./ui/pages/ResourcesTrackerPage";
 import PlantHealth from "./ui/pages/PlantHealth";
 import { Routes, Route, Link } from "react-router-dom";
+
 import "./App.css";
+import Layout from "../src/ui/components/Layout";
+import SettingsPage from "../src/ui/pages/SettingsPage";
+import FarmSchedulerPage from "../src/ui/pages/FarmSchedulerPage";
+import ChatPage from "../src/ui/pages/ChatbotPage";
+import SavedMessagesPage from "../src/ui/pages/SavedMessagePage";
+import ChatbotPageLayout from "../src/ui/components/chatbot/ChatbotPageLayout";
 
 function App() {
   return (
     <div>
-   
-      <Link to="/"></Link>
-      
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Plant-Health-Scanner" element={<PlantHealth />} />
-        <Route path="/Resources-Tracker" element={<ResourcesTrackerPage />} />
-        <Route path="/Forum" element={<CommunnityPage />} />
-        <Route path="/Chatbot" element={<ChatbotPage />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/Settings" element={<SettingsPage />} />
+          <Route path="/Farm-scheduler" element={<FarmSchedulerPage />} />
+          <Route path="/Resources-tracker" element={<ResourcesTrackerPage />} />
+          <Route path="/Plant-Health-Scanner" element={<PlantHealth />} />
+          {/*<Route path="/Forum" element={<CommunnityPage />} />*/}
+          <Route path="Chatbot" element={<ChatbotPageLayout />}>
+            {/* <Route index element={<ChatPage />} /> */}
+            <Route path="Chat" element={<ChatPage />}/>
+            <Route path="Saved-messages" element={<SavedMessagesPage />} />
+          </Route>
+        </Routes>
+      </Layout>
+
     </div>
   );
 }
 
-export default App;
 
+export default App;
