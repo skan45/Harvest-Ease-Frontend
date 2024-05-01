@@ -1,9 +1,9 @@
 import React from 'react'
 import './monitring.css'
-import potatoimg from "C:/Users/amine/OneDrive/Bureau/github/Harvest-Ease-Frontend/src/assets/potatos.jpg"; 
-import gingerimg from "C:/Users/amine/OneDrive/Bureau/github/Harvest-Ease-Frontend/src/assets/ginger.jpg";
-import tomatoimg from "C:/Users/amine/OneDrive/Bureau/github/Harvest-Ease-Frontend/src/assets/tomatos.jpg";
-import onionimg from "C:/Users/amine/OneDrive/Bureau/github/Harvest-Ease-Frontend/src/assets/onions.jpg";
+import potatoimg from "../assets/potatos.jpg"; 
+import gingerimg from "../assets/ginger.jpg";
+import tomatoimg from "../assets/tomatos.jpg";
+import onionimg from "../assets/onions.jpg";
 
 const Monitring = () => {
   return (

@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import Sidebar from "./ui/components/Sidebar/Sidebar";
+
 import CommunnityPage from "./ui/pages/CommunnityPage";
 import ChatbotPage from "./ui/pages/ChatbotPage";
 import Home from "./ui/pages/Home";
@@ -13,8 +13,7 @@ function App() {
     <div>
    
       <Link to="/"></Link>
-      <Link to="/Resources-Tracker"></Link>
-      <Link to="/PlantHealth"></Link>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Plant-Health-Scanner" element={<PlantHealth />} />

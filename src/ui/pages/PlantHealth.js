@@ -1,31 +1,21 @@
 import React from 'react'
 import './plantHealth.css';
-import {Plantdisease,Plantimg,Plantpest,Planttype } from '../components';
+import { PlantScanner } from '../Containers';
 import Sidebar from '../components/Sidebar/Sidebar';
 
 const PlantHealth = () => {
   return (
-    <div className='plant-health'>
+    <div className='plant_health'>
 
       <div className='sidebar_health'>
        <Sidebar />
       </div>
 
-      <div className='plantimg'>
-        <Plantimg />
+      <div className='plant_scanner'>
+        <PlantScanner/>
       </div>
 
-      <div className='plantdisease'>
-        <Plantdisease />
-      </div>
 
-      <div className='planttype'>
-        <Planttype />
-      </div>
-
-      <div className='plantpest'>
-   <Plantpest />
-      </div>
 
       
     </div>
