@@ -1,6 +1,6 @@
 import React from 'react'
 import './plantscanner.css';
-import {Plantdisease,Plantpest, Plantinfo } from '../components';
+import {Plantdisease, Plantinfo } from '../components';
 
 
 const PlantScanner = () => {
@@ -13,10 +13,6 @@ const PlantScanner = () => {
 
       <div className='plantdisease'>
         <Plantdisease />
-      </div>
-
-      <div className='plantpest'>
-        <Plantpest />
       </div>
 
      

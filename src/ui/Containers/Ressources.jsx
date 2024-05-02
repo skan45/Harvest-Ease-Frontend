@@ -4,6 +4,7 @@ import  { Monitring, Ressourcescosts, Analysis, Weather }   from "../components"
 
 const Resources = () => {
   return (
+
     <div className="tracker_container">
       <div className="analysis">
         <Analysis />
@@ -19,6 +20,7 @@ const Resources = () => {
       </div>
       
     </div>
+
   )
 }
 

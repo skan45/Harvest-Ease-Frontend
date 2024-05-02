@@ -1,7 +1,16 @@
 .plant-disease-container{
     width: 95%;
-    height: 95%;
-    margin: auto;
-    border: solid 2px rebeccapurple;
+    height: 100%;
+ 
+    margin:auto;
+    background: #F2F2F2 ;
+    border-radius: 20px;
 
+
+}
+
+.plant-disease-container h1{
+    color: #154734;
+   font-weight: 700;
+    font-size: 30px;
 }

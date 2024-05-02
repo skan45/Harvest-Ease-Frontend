@@ -2,7 +2,7 @@
 import React from "react";
 import './resourcestrackerpage.css';
 import  { Ressources }   from "../Containers"; 
-import Sidebar from "../components/Sidebar/Sidebar";
+
 
 const ResourcesTrackerPage = () => {
   return (

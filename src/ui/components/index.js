@@ -4,5 +4,4 @@ export {default as Weather} from './weather/Weather.jsx'
 export {default as Ressourcescosts} from './ressources_costs/Ressourcescosts.jsx'
 
 export {default as Plantdisease} from './plant_disease/Plantdisease.jsx'
-export {default as Plantpest} from './plant_pest/Plantpest.jsx'
 export {default as Plantinfo} from './plant_info/Plantinfo.jsx'

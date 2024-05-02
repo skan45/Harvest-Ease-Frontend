@@ -2,9 +2,10 @@
     width: 95%;
     height: 100%;
  
-    margin: 15px auto;
+    margin:auto;
     background: #F2F2F2 ;
     border-radius: 20px;
+
 }
 .form_plant-info{
     display: flex;

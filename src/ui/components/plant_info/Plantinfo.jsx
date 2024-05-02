@@ -59,16 +59,16 @@ const Plantinfo = () => {
         <img src={image} className='image' alt={imgUrl}/> 
         :
         <>
-        <MdCloudUpload className='upload-icon' color='#2A8316' size={60}/>
+        <MdCloudUpload className='upload-icon' color='#2A8316' size={100}/>
         <p>Browse files to upload image</p>
         </>
         }
         </section>
 
       <section className='uploaded-row'>
-        <AiFillFileImage className='image_icon' color='#2A8316' size={20}/>
+        <AiFillFileImage className='image_icon' color='#2A8316' size={40}/>
           {imgUrl}
-          <MdDelete className='delete-icon' color='#2A8316' size={20} 
+          <MdDelete className='delete-icon' color='#2A8316' size={40} 
           onClick={()=>{setImg(null); setImgUrl("Please upload an image")}}
           />
       </section>
