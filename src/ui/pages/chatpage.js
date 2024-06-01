@@ -67,17 +67,18 @@ function ChatPage() {
     console.log(`Message ${index + 1}:`, message);
   });
   return (
-    <>
+    <div className="h-full flex flex-col w-full mt-auto overflow-auto bg-whiteGray z-0">
       <MessagesLayout chatData={ chatData }/>
       <ChatbotInput 
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onSubmit={getResponse}
         error={error} 
-        className="fixed bottom-3 "
+        className="fixed bottom-3"
       />
-    </>
+    </div>
   )
 }
+
 
 export default ChatPage;

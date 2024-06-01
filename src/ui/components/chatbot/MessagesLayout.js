@@ -4,7 +4,7 @@ import MessageLayout from './MessageLayout'
 
 function MessagesLayout({chatData}) {
   return (
-    <ul className='flex flex-col p-7 h-full overflow-auto mt-5'>
+    <ul className='flex flex-col p-7 h-full overflow-auto mt-20'>
         {
             chatData.map(
                 (val, key)=>{

@@ -18,7 +18,7 @@ function ChatbotInput({value, onChange, onSubmit, error}) {
               placeholder='Enter a prompt here'
           />
           <button type="submit" className='mb-auto top-5 right-6 absolute'>
-              <PaperAirplaneIcon className='size-6 '/>
+              <PaperAirplaneIcon className='size-6'/>
           </button>
 
         </form>

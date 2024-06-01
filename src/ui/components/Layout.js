@@ -4,9 +4,9 @@ import { Outlet } from 'react-router-dom'
 
 function Layout({children}) {
   return (
-    <div className="flex min-h-screen ">
+    <div className="flex flex-col h-screen ">
         <Sidebar/>
-        <main className='flex-1 flex-col w-full h-screen'>{children}</main>
+        <main className='flex-grow'>{children}</main>
     </div>
   )
 }
